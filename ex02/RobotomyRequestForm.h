@@ -2,15 +2,14 @@
 #define ROBOTOMYREQUESTFORM_H
 #include "Aform.h"
 
-class RobotomyRequestForm
+class RobotomyRequestForm : public AForm
 {
 	private:
 		std::string target;
-
-	protected:
-		virtual void executeAction() const;
+		virtual void action() const;
 
 	public:
+		RobotomyRequestForm();
 		RobotomyRequestForm(const std::string);
 		RobotomyRequestForm(const RobotomyRequestForm &);
 		RobotomyRequestForm &operator=(const RobotomyRequestForm &);

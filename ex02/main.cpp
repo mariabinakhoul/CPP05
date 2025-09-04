@@ -5,27 +5,15 @@
 #include "PresidentialPardonForm.h"
 #include <iostream>
 
-int main(void)
+int main()
 {
-    try {
-        Bureaucrat bob("Bob", 50);
-        std::cout << bob << std::endl;
-        
-        ShrubberyCreationForm scf("Home");
-        RobotomyRequestForm rrf("Bender");
-        PresidentialPardonForm ppf("Fry");
-        
-        bob.signForm(scf);
-        bob.executeForm(scf);
-        
-        bob.signForm(rrf);
-        bob.executeForm(rrf);
-        
-        bob.signForm(ppf);
-        bob.executeForm(ppf);
-    }
-    catch (std::exception &e) {
-        std::cout << "Exception: " << e.what() << std::endl;
-    }
-    return 0;
+	ShrubberyCreationForm Robo_form("I am a robo form");
+	Bureaucrat Mr_Robo("Mr_Robo", 45);
+
+	Mr_Robo.executeForm(Robo_form);
+	Mr_Robo.signForm(Robo_form);
+	Mr_Robo.executeForm(Robo_form);
+	Mr_Robo.executeForm(Robo_form);
+	Mr_Robo.executeForm(Robo_form);
 }
+
