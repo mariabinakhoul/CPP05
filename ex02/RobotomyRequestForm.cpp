@@ -20,7 +20,7 @@ RobotomyRequestForm::~RobotomyRequestForm()
 {}
 
 
-void RobotomyRequestForm::action() const
+void RobotomyRequestForm::executeAction() const
 {
 	std::srand(std::time(0));
 	int randomValue = std::rand() % 2;

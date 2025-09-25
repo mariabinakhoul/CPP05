@@ -1,7 +1,7 @@
 #include "Form.h"
 
 
-Form::Form(const std::string& n, int sg, int eg): name(n), sign(sg), sgrade(sg), egrade(eg)
+Form::Form(const std::string& n, int sg, int eg): name(n), sign(false), sgrade(sg), egrade(eg)
 {
 	std::cout << "Constructor called\n";
 	if (sgrade < 1 || egrade < 1)
